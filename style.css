@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lufga SemiBold", sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 44px 120px;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.menu {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.blue-btn {
+    border: 2px solid #1DAEFF;
+    background-color: #FFFFFF;
+    color: #1DAEFF;
+    padding: 7px 40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 20%;
+    border-radius: 14px;
+}
+
+.menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 20%;
+    text-transform: uppercase;
+    color: #110229;
+}
+
+
+.little-logo {
+    display: none;
+}
+
+.brg-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.brg-menu>ion-icon {
+    color: #110229;
+    font-size: 40px;
+}
+
+#main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.image {
+    max-width: 1300px;
+    min-height: 634px;
+    width: 100%;
+    background-image: url(img/hommeee.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 92px 0 0 90px;
+    border-radius: 50px;
+}
+
+.image>h1 {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 100%;
+    color: #110229;
+    max-width: 490px;
+}
+
+.image>p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: #585981;
+    max-width: 470px;
+    margin: 39px 0 32px 0;
+}
+
+#card-section {
+    padding: 102px 0 140px 0;
+}
+
+.sec-info>h2 {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 100%;
+    color: #110229;
+    max-width: 478px;
+    width: 100%;  
+    text-align: center;
+}
+
+.sec-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+
+.card {
+    width: 278px;
+    height: 426px;
+    border-radius: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding-top: 48px;
+}
+
+.card>h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 20%;
+    text-transform: uppercase;
+    color: #110229;
+}
+
+.america {
+    background-image: url(img/america.jpg);
+}
+
+.spain {
+    background-image: url(img/spain.jpg);
+}
+
+.london {
+    background-image: url(img/london.jpg);
+}
+
+.france {
+    background-image: url(img/paris.jpg);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:1175px) {
+    .header__container {
+        padding: 44px 70px;
+    }
+
+    .menu {
+        gap: 40px;
+    }
+
+    .blue-btn {
+        padding: 5px 30px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .header__container {
+        padding: 30px 50px;
+    }
+
+    .logo>img {
+        width: 150px;
+        object-fit: cover;
+    }
+
+    .blue-btn {
+        padding: 2px 20px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .menu-link {
+        font-size: 14px;
+    }
+
+    .image>h1 {
+        font-size: 48px;
+    }
+
+    .image {
+        min-height: 500px;
+        padding: 50px;
+    }
+
+    .image>p {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        display: none;
+    }
+
+    .brg-menu {
+        display: flex;
+    }
+
+    .little-logo {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #main-section {
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .image {
+        text-align: center;
+    }
+
+    .image>h1 {
+        font-size: 40px;
+    }
+
+    .image {
+        min-height: 500px;
+        padding: 50px;
+    }
+
+    .image>p {
+        font-size: 18px;
+    }
+}
